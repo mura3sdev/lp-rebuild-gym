@@ -9,8 +9,8 @@
   --black-2: #161813;
   --black-3: #1F221B;
   --white:   #F2F1EA;   /* 文字: オフホワイト */
-  --gray:    #9A9B90;
-  --mute:    #6B6D62;
+  --gray:    #A8A99E;
+  --mute:    #82847A;
   --lime:    #C8F031;   /* アクセント: 蛍光ライム */
   --lime-deep:#A8CC1E;
   --line:    #2B2E26;
@@ -165,7 +165,7 @@ strong{
 .fv-catch{
   font-family:var(--display); font-weight:400;
   font-size:clamp(42px, 8vw, 88px);
-  line-height:1.32; letter-spacing:.04em;
+  line-height:1.38; letter-spacing:.06em;
 }
 .fv-catch em{ font-style:normal; color:var(--lime); }
 .fv-line{ display:block; overflow:hidden; }
@@ -189,6 +189,12 @@ strong{
   border:1px solid var(--line);
   background:rgba(31,34,27,.6);
   padding:6px 16px;
+}
+/* 価格・期間バッジはライム枠で強調し、購買判断材料をFVに昇格 */
+.fv-badge-price{
+  color:var(--lime);
+  border-color:rgba(200,240,49,.5) !important;
+  background:rgba(200,240,49,.08) !important;
 }
 .fv-cta{ margin-top:36px; animation:fadeIn 1s ease 1.3s both; }
 .fv-foot{
@@ -218,18 +224,18 @@ strong{
 .sec{ padding:var(--sec-pad) 0; position:relative; }
 .sec-head{ margin-bottom:clamp(36px, 6vw, 64px); }
 .sec-en{
-  font-family:var(--num); font-size:13px; letter-spacing:.36em;
-  color:var(--lime); margin-bottom:10px;
+  font-family:var(--num); font-size:14px; letter-spacing:.36em;
+  color:var(--lime); margin-bottom:14px;
 }
 .sec-title{
   font-family:var(--display); font-weight:400;
-  font-size:clamp(26px, 4vw, 42px);
-  letter-spacing:.05em; line-height:1.5;
+  font-size:clamp(30px, 5vw, 52px);
+  letter-spacing:.06em; line-height:1.4;
 }
 .sec-lead{ margin-top:12px; color:var(--gray); font-size:13.5px; }
 
 .reveal{
-  opacity:0; transform:translateY(28px);
+  opacity:0; transform:translateY(16px);
   transition:opacity .8s ease, transform .8s ease;
 }
 .reveal.is-shown{ opacity:1; transform:none; }
@@ -370,7 +376,7 @@ strong{
 .plan-feat{ list-style:none; }
 .plan-feat li{
   position:relative; padding:6px 0 6px 24px;
-  font-size:13px; color:var(--gray);
+  font-size:13px; color:var(--white); opacity:.82;
 }
 .plan-feat li::before{
   content:""; position:absolute; left:2px; top:13px;
@@ -412,7 +418,7 @@ strong{
 .faq-icon::after{ transform:rotate(90deg); }
 .faq-item[open] .faq-icon::after{ transform:rotate(0deg); }
 .faq-body{ padding:0 36px 24px 8px; }
-.faq-body p{ font-size:14px; color:var(--gray); }
+.faq-body p{ font-size:14px; color:var(--white); opacity:.82; }
 .faq-item[open] .faq-body{ animation:fadeSlide .35s ease; }
 @keyframes fadeSlide{
   from{ opacity:0; transform:translateY(-6px); }
