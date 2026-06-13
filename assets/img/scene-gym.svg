@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="暗いジムでトレーニングするシルエットのイメージ">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161813"/>
+      <stop offset="1" stop-color="#0B0C09"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="62%" cy="36%" r="55%">
+      <stop offset="0" stop-color="#C8F031" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#C8F031" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1280" height="720" fill="url(#floor)"/>
+  <rect width="1280" height="720" fill="url(#spot)"/>
+  <!-- コンクリの目地 -->
+  <g stroke="#F2F1EA" stroke-opacity=".05" stroke-width="1">
+    <path d="M0 120H1280M0 300H1280M0 480H1280"/>
+    <path d="M260 0V720M620 0V720M980 0V720"/>
+  </g>
+  <!-- 巨大ステンシル文字 -->
+  <text x="60" y="250" font-family="'Arial Black',sans-serif" font-weight="900" font-size="220"
+    fill="none" stroke="#F2F1EA" stroke-opacity=".06" stroke-width="2" letter-spacing="6">REBUILD</text>
+
+  <!-- 床ライン -->
+  <path d="M0 560H1280" stroke="#C8F031" stroke-width="3" opacity=".5"/>
+
+  <!-- ラック（背景） -->
+  <g stroke="#2B2E26" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M120 120V560M210 120V560M120 200H210M120 300H210M120 400H210"/>
+  </g>
+  <!-- 並んだダンベル -->
+  <g fill="#3A3E33">
+    <g transform="translate(122 188)"><rect x="0" y="0" width="86" height="20" rx="6"/><circle cx="6" cy="10" r="14" fill="#C8F031"/><circle cx="80" cy="10" r="14" fill="#C8F031"/></g>
+    <g transform="translate(122 288)"><rect x="0" y="0" width="86" height="20" rx="6"/><circle cx="6" cy="10" r="14"/><circle cx="80" cy="10" r="14"/></g>
+    <g transform="translate(122 388)"><rect x="0" y="0" width="86" height="20" rx="6"/><circle cx="6" cy="10" r="14"/><circle cx="80" cy="10" r="14"/></g>
+  </g>
+
+  <!-- トレーニングするシルエット（ゴブレットスクワット） -->
+  <g transform="translate(680 150)" fill="#C8F031">
+    <!-- 頭 -->
+    <circle cx="120" cy="40" r="34"/>
+    <!-- 胴 -->
+    <path d="M86 86 C80 70 160 70 156 86 L168 240 C168 270 74 270 74 240 Z"/>
+    <!-- 腕（胸の前でダンベル保持） -->
+    <path d="M92 120 C60 140 60 180 96 196" fill="none" stroke="#C8F031" stroke-width="26" stroke-linecap="round"/>
+    <path d="M150 120 C182 140 182 180 146 196" fill="none" stroke="#C8F031" stroke-width="26" stroke-linecap="round"/>
+    <!-- ダンベル -->
+    <g transform="translate(98 196)"><rect x="0" y="-12" width="46" height="24" rx="6" fill="#F2F1EA"/><circle cx="0" cy="0" r="20" fill="#F2F1EA"/><circle cx="46" cy="0" r="20" fill="#F2F1EA"/></g>
+    <!-- 脚（スクワット） -->
+    <path d="M86 246 C50 250 44 320 70 360 L96 408 H120 L108 350 C104 320 120 300 120 300 C120 300 136 320 132 350 L120 408 H146 L172 360 C198 320 192 250 156 246 Z"/>
+  </g>
+
+  <!-- 汗・躍動の記号 -->
+  <g fill="#C8F031" opacity=".8">
+    <circle cx="640" cy="220" r="5"/><circle cx="610" cy="260" r="4"/><circle cx="980" cy="240" r="5"/>
+  </g>
+</svg>
